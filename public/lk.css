@@ -1,0 +1,168 @@
+/* Стили для страницы Личного кабинета (lk.html) */
+
+body {
+    background-color: #f8f8f8;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Размещение контейнера по вертикали */
+    min-height: 100vh; /* Минимальная высота контейнера равна высоте окна просмотра */
+}
+
+header {
+    background-color: #298360;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    background-color: #298360;
+    text-align: center;
+    /* padding: 20px 0; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Убираем правый отступ у последнего элемента */
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1a6041;
+}
+#logout-link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.user-info {
+    width: 800px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Расширение контейнера, чтобы занимать все доступное пространство по вертикали */
+}
+
+section.user-info h2 {
+    margin-bottom: 10px;
+}
+
+section.user-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section.user-info ul li {
+    margin-bottom: 10px;
+}
+
+section.user-info ul li strong {
+    font-weight: bold;
+}
+
+section.user-info ul li input[type="text"],
+section.user-info ul li input[type="email"],
+section.user-info ul li input[type="tel"],
+section.user-info ul li input[type="password"],
+section.user-info ul li input[type="sex"],
+section.user-info ul li select,
+section.user-info ul li input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.user-info ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #298360;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.user-info ul li button:hover {
+    background-color: #1a6041;
+}
+
+#orders-list {
+    padding: 0;
+}
+
+#orders-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+footer {
+    background-color: #298360;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+    width: 100%;
+    flex-shrink: 0; /* Отменяет сжатие футера при нехватке места */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Кнопка "Смотреть" */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #298360;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a6041;
+}

@@ -1,0 +1,10 @@
+/* Стили для главной страницы */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+}

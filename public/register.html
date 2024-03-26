@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+      
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="basket.html">Корзина</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <h2>Регистрация</h2>
+    <section class="registration-form">
+        <form id="register-form">
+            <label for="first_name">Имя:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Фамилия:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone_number">Телефон:</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
+
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="sex">Пол:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="date_of_birth">Дата рождения:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" required>
+
+            
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p id="error-message" style="color: red;"></p> <!-- Здесь будет отображаться сообщение об ошибке -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Название вашего интернет-магазина</p>
+    </footer>
+    <script src="register.js"></script> <!-- Подключаем JavaScript-файл для обработки формы -->
+</body>
+</html>

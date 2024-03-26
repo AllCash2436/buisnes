@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="checkout.css">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="ckeckout.html">Оформление заказа</a></li>
+            <li id="register-link"><a href="login.html">Регистрация</a></li>
+            <li id="logout-link" style="display: none;"><a href="#" id="logout-btn">Выйти</a></li>
+        </ul>
+    </nav>
+    <h2>Оформление заказа</h2>
+    <div id="order-details">
+        <!-- Здесь будут отображены выбранные товары из корзины -->
+    </div>
+
+    <button onclick="placeOrder()">Оформить заказ</button>
+<footer>
+    <p>&copy; 2024 STOLMAN</p>
+</footer>
+    <script src="checkout.js"></script>
+</body>
+</html>

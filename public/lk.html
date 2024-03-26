@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="lk.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="ophormlenie_zakaza.html">Оформление заказа</a></li>
+            <li id="register-link"><a href="login.html">Регистрация</a></li>
+        </ul>
+    </nav>
+  
+</header>
+<h2>Личный кабинет</h2>
+<section class="user-info">
+    <form id="user-profile-form">
+    <h2>Информация о пользователе</h2>
+    <ul>
+        <li><strong>Имя:</strong> <input type="text" id="first_name" name="first_name"></li>
+        <li><strong>Фамилия:</strong> <input type="text" id="last_name" name="last_name"></li>
+        <li><strong>Email:</strong> <input type="email" id="email" name="email"></li>
+        <li><strong>Телефон:</strong> <input type="tel" id="phone_number" name="phone_number"></li>
+        <li><strong>Адрес:</strong> <input type="text" id="address" name="address"></li>
+        <li><strong>Пол:</strong> 
+            <select id="sex" name="sex">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>             
+            </select>
+        </li>
+        <li><strong>Пароль:</strong> <input type="password" id="password" name="password"></li>
+        <li><strong>Дата рождения:</strong> <input type="date" id="date_of_birth" name="date_of_birth"></li>
+       
+    </ul>
+    <button type="submit">Редактировать</button>
+    <button type="button" id="update-info-btn">Обновить информацию</button>
+    <button id="logout-btn">Выйти</button>
+    </form>
+
+  <h2>Предыдущие заказы</h2>
+<ul id="orders-list"></ul>
+
+</section>
+<footer>
+
+    <p>&copy; 2024 STOLMAN</p>
+</footer>
+<script src="lk.js"></script> 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loggedInUserEmail = localStorage.getItem("loggedInUserEmail");
+        if (!loggedInUserEmail) {
+            window.location.href = "/login.html"; // Перенаправляем на страницу авторизации, если пользователь не авторизован
+        } else {
+            fetchUserData(loggedInUserEmail);
+            document.getElementById("register-link").style.display = "none";
+        }
+
+        const loggedInUserPassword = localStorage.getItem("loggedInUserPassword");
+        if (loggedInUserPassword) {
+            document.getElementById("password").value = loggedInUserPassword;
+        }
+    });
+
+    // Обработчик для кнопки "Выйти"
+    document.getElementById("logout-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+        localStorage.removeItem("loggedInUserEmail");
+        localStorage.removeItem("loggedInUserPassword");
+        window.location.href = "/login.html";
+        document.getElementById("register-link").style.display = "block";
+    });
+</script> 
+</body>
+</html>

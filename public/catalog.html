@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+    <nav>
+        <ul>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="checkout.html">Оформление заказа</a></li>
+            <li><a href="lk.html">Личный кабинет</a></li>
+        </ul>
+    </nav>
+    <h2>Каталог товаров</h2>
+    <div class="filters">
+        <!-- Добавим элементы управления для сортировки, поиска и фильтрации -->
+        <input type="text" id="search" placeholder="Поиск по названию">
+        <select id="sort">
+            <option value="price_asc">Цена: по возрастанию</option>
+            <option value="price_desc">Цена: по убыванию</option>
+        </select>
+        <!-- Предположим, что есть категории товаров, по которым можно фильтровать -->
+        <select id="category">
+            <option value="">Все категории</option>
+            <option value="Столы">Стеклянные</option>
+            <option value="Стулья">Деревянные</option>
+        </select>
+        <!-- Кнопка для применения фильтров -->
+        <button id="apply-filters">Применить фильтры</button>
+    </div>
+    <main id="product-container">
+        <!-- Карточки товаров будут добавлены сюда динамически с помощью JavaScript -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Название вашего интернет-магазина</p>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>

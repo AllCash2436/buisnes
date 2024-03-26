@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+    <nav>
+        <ul>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="checkout.html">Оформление заказа</a></li>
+            <li><a href="lk.html">Личный кабинет</a></li>
+        </ul>
+    </nav>
+    <h2>Корзина</h2>
+    <div id="basket-items" class="basket-items">
+        <!-- Здесь будут отображаться добавленные товары -->
+    </div>
+
+    <div id="total-price" class="total-price">
+        <!-- Здесь будет отображаться общая стоимость товаров в корзине -->
+    </div>
+      <!-- Кнопка перехода к оформлению заказа -->
+      <button id="checkout-button">Перейти к оформлению</button>
+    <footer>
+        <p>&copy; 2024 Название вашего интернет-магазина</p>
+    </footer>
+
+    <script src="basket.js"></script>
+    <script>
+        // Обработчик клика на кнопке "Перейти к оформлению"
+        document.getElementById("checkout-button").addEventListener("click", function() {
+            window.location.href = "checkout.html"; // Переход на страницу оформления заказа
+        });
+    </script>
+</body>
+</html>

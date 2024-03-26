@@ -1,0 +1,88 @@
+/* Стили для страницы корзины */
+.basket-items {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.basket-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.basket-item-info {
+    flex-grow: 1;
+}
+
+.basket-item-info h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.basket-item-info p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.basket-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #298360;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #298360;
+}
+
+#checkout-button {
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #298360;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-button:hover {
+    background-color: #1a6041;
+}
+
+.btn_rm{
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #298360;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+p{
+    margin-left: 10px;
+}
+
+h3{
+    margin-left: 10px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
